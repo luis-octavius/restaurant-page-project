@@ -1,0 +1,10 @@
+:root {
+    --main-bg-color: rgb(91, 145, 59);
+    --main-content-color: rgb(119, 178, 84);
+    --main-font-color: rgb(255, 232, 182);
+    --main-border-color: rgb(217, 157, 129);
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
