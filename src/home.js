@@ -2,7 +2,7 @@ import img from "./assets/patricktomasso.jpg"
 
 const imgHome = new Image();
 imgHome.src = img;
-imgHome.style.cssText = "max-width: 100%; height: auto;"
+imgHome.style.cssText = "max-width: 70%; height: auto; border-radius: 20px;"
 
 export const divContent = document.querySelector("#content");
 console.log(divContent);
@@ -23,4 +23,5 @@ export function homeContent () {
     const finalMsg = document.createElement("h2");
     finalMsg.textContent = "Come to see us and have a free beer!";
     divContent.appendChild(finalMsg);
+    finalMsg.style.cssText = "color: white; text-align: center; font-family: 'Exo 2', serif;"
 }
