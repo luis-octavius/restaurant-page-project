@@ -8,6 +8,7 @@ export const divContent = document.querySelector("#content");
 console.log(divContent);
 
 export function homeContent () {
+    divContent.innerHTML = "";
     const divHeadline = document.createElement("div");
     divHeadline.classList.add("divHeadline");
     divContent.appendChild(divHeadline);
