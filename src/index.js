@@ -1,9 +1,15 @@
 import "./styles.css";
+import { divContent, homeContent } from "./home.js";
+import html from "./template.html";
 
-const btnHome = document.querySelector("btn-home");
-const btnMenu = document.querySelector("btn-menu");
-const btnAbout = document.querySelector("btn-about");
+console.log(divContent);
+homeContent();
 
-btnHome.addEventListener('click', () => {
-    console.log('Me clicked')
-});
+const btnHome = document.querySelector("#btn-home");
+const btnMenu = document.querySelector("#btn-menu");
+const btnAbout = document.querySelector("#btn-about");
+
+
+
+btnHome.addEventListener('click', homeContent);
+
