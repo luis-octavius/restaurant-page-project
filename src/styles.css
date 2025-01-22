@@ -11,5 +11,10 @@ body {
 
 header nav {
     display: flex;
-    
+    justify-content: space-around;
+}
+
+header nav button {
+    background: none;
+    border: none;
 }
