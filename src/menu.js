@@ -3,9 +3,9 @@ import img1 from "./assets/brookelark.jpg";
 import img2 from "./assets/brookelark2.jpg";
 import img3 from "./assets/odiseocastrejon.jpg";
 
-const imgMenu1 = new Image ();
-const imgMenu2 = new Image ();
-const imgMenu3 = new Image ();
+const imgMenu1 = new Image();
+const imgMenu2 = new Image();
+const imgMenu3 = new Image();
 
 imgMenu1.src = img1;
 imgMenu2.src = img2;
@@ -28,21 +28,22 @@ imgMenu3.src = img3;
 // }
 
 
-export function menuContent () {
+export function menuContent() {
     divContent.innerHTML = "";
 
-    function createDiv (img, h1, text){
+    function createDiv(img, h1, text) {
         const divPlate = document.createElement("div");
-
+        divContent.appendChild(divPlate);
+        divPlate.appendChild(img);
 
         const divText = document.createElement("div");
         divPlate.appendChild(divText);
         divPlate.classList.add("divplate");
 
-        const h1 = document.createElement("h1");
-        h1.textContent = "Delicious Juices";
+        const dishTitle = document.createElement("h1");
+        dishTitle.textContent = "Delicious Juices";
         divText.classList.add("divPlateText");
-        divText.appendChild(h1);
+        divText.appendChild(dishTitle);
 
         const para = document.createElement("p");
         para.textContent = text;
@@ -52,7 +53,7 @@ export function menuContent () {
     createDiv(imgMenu1, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
     createDiv(imgMenu2, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
     createDiv(imgMenu3, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
-        
+
 
     // divContent.appendChild(imgMenu1);
     // divContent.appendChild(imgMenu2);
@@ -69,12 +70,6 @@ export function menuContent () {
     // //         console.log(arr[i]);
     // //     }
     // // }
-
-
-    
-
-    console.log(createDivPlate(imgMenu1, "Yes", "That's a delicious dish"));
-    
 
 }
 
