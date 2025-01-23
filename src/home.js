@@ -1,4 +1,4 @@
-import img from "./assets/patricktomasso.jpg"
+import img from "./assets/lucabravo.jpg"
 
 const imgHome = new Image();
 imgHome.src = img;
