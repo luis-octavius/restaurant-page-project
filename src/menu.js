@@ -11,33 +11,70 @@ imgMenu1.src = img1;
 imgMenu2.src = img2;
 imgMenu3.src = img3;
 
-class divPlate {
-    constructor(father, img, h2, text) {
-        this.father = father;
-        this.img = img;
-        this.h2 = h2;
-        this.text = text;
-    }
-    set divAccoplate (father) {
-        const divP = document.createElement("div");
-        return this.father.appendChild(`${this.img}${this.h2}${this.text}`);
-    }
-}
+// class Tentative, does not work yet
+// class divPlate {
+//     constructor(father, img, h2, text) {
+//         this.father = father;
+//         this.img = img;
+//         this.h2 = h2;
+//         this.text = text;
+//     }
+//     set divAcc (father) {
+//         const divP = document.createElement("div");
+//         divP.innerHTML = `<img src=${this.img}><h2>${this.h2}</h2> <p>${this.text}<p>`;
+//         divContent.appendChild(divP);
+//         return divP;
+//     }
+// }
 
 
 export function menuContent () {
     divContent.innerHTML = "";
-    divContent.appendChild(imgMenu1);
-    divContent.appendChild(imgMenu2);
-    divContent.appendChild(imgMenu3);
 
-    const imgPack = divContent.getElementsByTagName("img");
+    function createDiv (img, h1, text){
+        const divPlate = document.createElement("div");
 
-    for (let i = 0; i < imgPack.length; i++) {
-        imgPack[i].style.cssText = "width: 150px; height: auto;"
+
+        const divText = document.createElement("div");
+        divPlate.appendChild(divText);
+        divPlate.classList.add("divplate");
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "Delicious Juices";
+        divText.classList.add("divPlateText");
+        divText.appendChild(h1);
+
+        const para = document.createElement("p");
+        para.textContent = text;
+        divText.appendChild(para);
     }
 
-    const divPlate1 = new divPlate(divContent, )
+    createDiv(imgMenu1, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
+    createDiv(imgMenu2, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
+    createDiv(imgMenu3, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
+        
 
+    // divContent.appendChild(imgMenu1);
+    // divContent.appendChild(imgMenu2);
+    // divContent.appendChild(imgMenu3);
+
+    // const imgPack = divContent.getElementsByTagName("img");
+
+    // // try to create a function that makes the divPlates
+    // // function createDivPlate (img, title, text) {
+    // //     let arr = [...arguments];
+    // //     console.log(arguments);
+
+    // //     for(let i = 0; i < arr.length; i++) {
+    // //         console.log(arr[i]);
+    // //     }
+    // // }
+
+
+    
+
+    console.log(createDivPlate(imgMenu1, "Yes", "That's a delicious dish"));
+    
 
 }
+
