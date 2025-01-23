@@ -41,7 +41,7 @@ export function menuContent() {
         divPlate.classList.add("divplate");
 
         const dishTitle = document.createElement("h1");
-        dishTitle.textContent = "Delicious Juices";
+        dishTitle.textContent = h1;
         divText.classList.add("divPlateText");
         divText.appendChild(dishTitle);
 
