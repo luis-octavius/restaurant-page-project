@@ -27,28 +27,30 @@ imgMenu3.src = img3;
 //     }
 // }
 
+function createDiv(img, h1, text) {
+    const divPlate = document.createElement("div");
+    divContent.appendChild(divPlate);
+    divPlate.appendChild(img);
+
+    const divText = document.createElement("div");
+    divPlate.appendChild(divText);
+    divPlate.classList.add("divplate");
+
+    const dishTitle = document.createElement("h1");
+    dishTitle.textContent = h1;
+    divText.classList.add("divPlateText");
+    divText.appendChild(dishTitle);
+
+    const para = document.createElement("p");
+    para.textContent = text;
+    divText.appendChild(para);
+}
+
 
 export function menuContent() {
     divContent.innerHTML = "";
 
-    function createDiv(img, h1, text) {
-        const divPlate = document.createElement("div");
-        divContent.appendChild(divPlate);
-        divPlate.appendChild(img);
-
-        const divText = document.createElement("div");
-        divPlate.appendChild(divText);
-        divPlate.classList.add("divplate");
-
-        const dishTitle = document.createElement("h1");
-        dishTitle.textContent = h1;
-        divText.classList.add("divPlateText");
-        divText.appendChild(dishTitle);
-
-        const para = document.createElement("p");
-        para.textContent = text;
-        divText.appendChild(para);
-    }
+    
 
     createDiv(imgMenu1, "Delicious Drinks", "A collection of seasonal drinks infused with fresh cranberries, pears, and garnished with rosemary and edible flowers. Perfect for celebrations and special moments.");
     createDiv(imgMenu2, "Mediterranean Foods", "A vibrant dish featuring creamy hummus topped with pesto, cherry tomatoes, pomegranate seeds, almonds, and edible rose petals for a fresh and artistic presentation.")
