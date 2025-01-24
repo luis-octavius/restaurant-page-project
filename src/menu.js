@@ -50,9 +50,9 @@ export function menuContent() {
         divText.appendChild(para);
     }
 
-    createDiv(imgMenu1, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
-    createDiv(imgMenu2, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
-    createDiv(imgMenu3, "Delicious Juices", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim.")
+    createDiv(imgMenu1, "Delicious Drinks", "A collection of seasonal drinks infused with fresh cranberries, pears, and garnished with rosemary and edible flowers. Perfect for celebrations and special moments.");
+    createDiv(imgMenu2, "Mediterranean Foods", "A vibrant dish featuring creamy hummus topped with pesto, cherry tomatoes, pomegranate seeds, almonds, and edible rose petals for a fresh and artistic presentation.")
+    createDiv(imgMenu3, "Chickpea Harvest Salad Bowl", "A hearty Mediterranean bowl with crispy chickpeas, fresh greens, olives, figs, cucumber, and tomatoes, served with a creamy yogurt drizzle and rustic flatbread.")
 
 
     // divContent.appendChild(imgMenu1);
