@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imperial+Script&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --main-bg-color: rgb(101, 69, 32);
-    --main-content-color: rgb(130, 91, 50);
-    --main-font-color: rgb(238, 238, 238);
-    --main-border-color: rgb(216, 64, 64);
+    --main-bg-color: rgb(233, 238, 217);
+    --main-content-color: rgb(203, 210, 164);
+    --main-font-color: rgb(154, 126, 111);
+    --main-border-color: rgb(84, 71, 63);
 }
 
 body {
@@ -42,7 +42,7 @@ div#logo {
 }
 
 #logo-img {
-    filter: invert(100%) sepia(100%) saturate(25%) hue-rotate(17deg) brightness(107%) contrast(106%);;
+    filter: invert(0%) sepia(100%) saturate(25%) hue-rotate(17deg) brightness(107%) contrast(106%);
 }
 
 #btn-home {
@@ -61,7 +61,7 @@ header nav button {
 }
 
 div#content {
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: var(--main-content-color);
     border-radius: 10px; 
@@ -100,9 +100,10 @@ div#content {
 .divplate {
     margin-top: 100px;
     display: flex;
-    width: 50%;
-    justify-content: space-around;
-    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .divPlateText {
@@ -113,11 +114,45 @@ div#content {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+    width: 30%;
+    flex: 1;
+}
+
+.divPlateText h1 {
+    font-size: 3rem;
+}
+
+.divPlateText p {
+    font-size: 2rem;
 }
 
 .divplate img {
-    width: 60%;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
+    flex-shrink: 3;
+}
+
+@media (max-width: 500px) {
+    .divPlateText p {
+        font-size: 1rem;
+    }
+    .divPlateText h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    div#content {
+        gap: 0;
+    }
+
+    header nav { 
+        flex-direction: column;
+        height: auto;
+    }
+
+    #btn-menu, #btn-about {
+        align-self: flex-end;
+    }
+
 }
