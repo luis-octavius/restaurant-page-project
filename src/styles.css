@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imperial+Script&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imperial+Script&family=Monoton&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --main-bg-color: rgb(233, 238, 217);
-    --main-content-color: rgb(203, 210, 164);
-    --main-font-color: rgb(154, 126, 111);
-    --main-border-color: rgb(84, 71, 63);
+    --main-bg-color: rgb(151, 190, 90);
+    --main-content-color: rgb(255, 0, 0);
+    --main-font-color: rgb(255, 232, 197);
+    --main-border-color: rgb(255, 162, 127);
 }
 
 body {
@@ -22,13 +22,18 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 40px;
     align-items: flex-start;
-    height: 50px; 
+    height: 80px; 
 }
 
 header nav button, div#logo {
     color: var(--main-font-color);
+}
+
+button {
+    transition: 0.3s;
 }
 
 div#logo {
@@ -53,11 +58,21 @@ div#logo {
     font-style: italic;
 }
 
+#btn-menu, #btn-about {
+    align-self: center;
+}
+
 header nav button {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
+}
+
+.font-monoton {
+    font-family: "Monoton", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 div#content {
@@ -84,7 +99,7 @@ div#content {
 .divHeadline h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: var(--main-border-color);
+    color: var(--main-font-color);
 }
 
 .divHeadline p {
@@ -122,7 +137,7 @@ div#content {
 
 .divPlateText h1 {
     font-size: 3rem;
-    color: var(--main-border-color);
+    color: var(--main-font-color);
 }
 
 .divPlateText p {
@@ -130,12 +145,17 @@ div#content {
 }
 
 .divplate img {
-    /* max-width: 20%; */
     width: 400px;
     height: auto;
     border-radius: 5px;
     flex-shrink: 3;
 }
+
+/* About styling */
+
+
+
+
 
 @media (max-width: 1000px) {
     .divplate img {
@@ -145,10 +165,10 @@ div#content {
         flex: 1;
     }
     .divPlateText p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .divPlateText h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     div#content {
@@ -158,6 +178,7 @@ div#content {
     header nav { 
         flex-direction: column;
         height: auto;
+        gap: 0;
     }
 
     #btn-menu, #btn-about {
