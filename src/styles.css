@@ -151,17 +151,16 @@ footer {
 
 /* About styling */
 
-.font-monoton {
-    font-family: "Monoton", serif;
+.font-train {
+    font-family: "Train One", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .about-img {
     max-width: 50%;
-    border: 2px solid;
     border-radius: 10px;
-    box-shadow: 10px 10px black;
+    box-shadow: 10px 10px var(--main-bg-color);
 }
 
 .about-text {
@@ -173,12 +172,18 @@ footer {
     padding-top: 100px;
 }
 
+.text-adress {
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+}
+
 .map {
     width: 50%;
     height: 40vw;
     border-radius: 10px;
-    box-shadow: 10px 10px black;
-    margin-bottom: 100px;
+    box-shadow: 10px 10px var(--main-bg-color);
+    margin-bottom: 50px;
 }
 
 

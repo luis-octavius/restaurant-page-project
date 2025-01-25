@@ -22,8 +22,7 @@ export function aboutContent() {
   textAdress.innerHTML = `123 Blossom Lane
 <br>Rosewood District, Meadowville
 <br>Open daily: 11 AM - 10 PM 🌸`;
-  
-  textAdress.style.cssText = "color: var(--main-font-color); font-family: var(--main-font); text-align: center";
+  textAdress.classList.add("text-adress")
 
   const map = document.createElement("iframe");
   map.src ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12295.52837025058!2d-76.96085277635764!3d39.607338454780994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8471f62ec3a5d%3A0x628f5fd2fb42d97c!2sRandom%20Heights%2C%20MD%2021157%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1737777726632!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';

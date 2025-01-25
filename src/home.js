@@ -14,7 +14,7 @@ export function homeContent() {
   divContent.appendChild(divHeadline);
 
   const h1Content = document.createElement("h1");
-  h1Content.classList.add("font-monoton");
+  h1Content.classList.add("font-train");
   h1Content.textContent = "Bloom and Thyme";
   divHeadline.appendChild(h1Content);
   const paraContent = document.createElement("p");
