@@ -28,50 +28,56 @@ imgMenu3.src = img3;
 // }
 
 function createDiv(img, h1, text) {
-    const divPlate = document.createElement("div");
-    divContent.appendChild(divPlate);
-    divPlate.appendChild(img);
+  const divPlate = document.createElement("div");
+  divContent.appendChild(divPlate);
+  divPlate.appendChild(img);
 
-    const divText = document.createElement("div");
-    divPlate.appendChild(divText);
-    divPlate.classList.add("divplate");
+  const divText = document.createElement("div");
+  divPlate.appendChild(divText);
+  divPlate.classList.add("divplate");
 
-    const dishTitle = document.createElement("h1");
-    dishTitle.textContent = h1;
-    divText.classList.add("divPlateText");
-    divText.appendChild(dishTitle);
+  const dishTitle = document.createElement("h1");
+  dishTitle.textContent = h1;
+  divText.classList.add("divPlateText");
+  divText.appendChild(dishTitle);
 
-    const para = document.createElement("p");
-    para.textContent = text;
-    divText.appendChild(para);
+  const para = document.createElement("p");
+  para.textContent = text;
+  divText.appendChild(para);
 }
-
 
 export function menuContent() {
-    divContent.innerHTML = "";
+  divContent.innerHTML = "";
 
-    
+  createDiv(
+    imgMenu1,
+    "Delicious Drinks",
+    "A collection of seasonal drinks infused with fresh cranberries, pears, and garnished with rosemary and edible flowers. Perfect for celebrations and special moments."
+  );
+  createDiv(
+    imgMenu2,
+    "Mediterranean Foods",
+    "A vibrant dish featuring creamy hummus topped with pesto, cherry tomatoes, pomegranate seeds, almonds, and edible rose petals for a fresh and artistic presentation."
+  );
+  createDiv(
+    imgMenu3,
+    "Chickpea Harvest Salad Bowl",
+    "A hearty Mediterranean bowl with crispy chickpeas, fresh greens, olives, figs, cucumber, and tomatoes, served with a creamy yogurt drizzle and rustic flatbread."
+  );
 
-    createDiv(imgMenu1, "Delicious Drinks", "A collection of seasonal drinks infused with fresh cranberries, pears, and garnished with rosemary and edible flowers. Perfect for celebrations and special moments.");
-    createDiv(imgMenu2, "Mediterranean Foods", "A vibrant dish featuring creamy hummus topped with pesto, cherry tomatoes, pomegranate seeds, almonds, and edible rose petals for a fresh and artistic presentation.")
-    createDiv(imgMenu3, "Chickpea Harvest Salad Bowl", "A hearty Mediterranean bowl with crispy chickpeas, fresh greens, olives, figs, cucumber, and tomatoes, served with a creamy yogurt drizzle and rustic flatbread.")
+  // divContent.appendChild(imgMenu1);
+  // divContent.appendChild(imgMenu2);
+  // divContent.appendChild(imgMenu3);
 
+  // const imgPack = divContent.getElementsByTagName("img");
 
-    // divContent.appendChild(imgMenu1);
-    // divContent.appendChild(imgMenu2);
-    // divContent.appendChild(imgMenu3);
+  // // try to create a function that makes the divPlates
+  // // function createDivPlate (img, title, text) {
+  // //     let arr = [...arguments];
+  // //     console.log(arguments);
 
-    // const imgPack = divContent.getElementsByTagName("img");
-
-    // // try to create a function that makes the divPlates
-    // // function createDivPlate (img, title, text) {
-    // //     let arr = [...arguments];
-    // //     console.log(arguments);
-
-    // //     for(let i = 0; i < arr.length; i++) {
-    // //         console.log(arr[i]);
-    // //     }
-    // // }
-
+  // //     for(let i = 0; i < arr.length; i++) {
+  // //         console.log(arr[i]);
+  // //     }
+  // // }
 }
-
