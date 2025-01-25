@@ -1,11 +1,10 @@
-import img from "./assets/lucabravo.jpg"
+import img from "./assets/home.jpg"
 
 const imgHome = new Image();
 imgHome.src = img;
 imgHome.style.cssText = "max-width: 70%; height: auto; border-radius: 20px;"
 
 export const divContent = document.querySelector("#content");
-console.log(divContent);
 
 export function homeContent () {
     divContent.innerHTML = "";
@@ -13,10 +12,11 @@ export function homeContent () {
     divHeadline.classList.add("divHeadline");
     divContent.appendChild(divHeadline);
     const h1Content = document.createElement("h1");
-    h1Content.textContent = "Philosopher's Cave";
+    h1Content.textContent = "Bloom & Thyme";
     divHeadline.appendChild(h1Content);
     const paraContent = document.createElement("p");
-    paraContent.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dapibus mauris. Proin tincidunt, nisl quis volutpat interdum, tortor sem facilisis eros, sit amet vestibulum est diam et enim. Vivamus vestibulum non libero pulvinar bibendum. Mauris ante odio, rutrum in arcu blandit, venenatis bibendum erat. Donec imperdiet enim sagittis sapien scelerisque, a lacinia ligula convallis. Ut non dolor ut augue mattis mattis sit amet in turpis. Nullam scelerisque ut nisi non pellentesque. Pellentesque vel est pharetra, tincidunt augue eget, pellentesque lectus. Proin ut lectus ut dolor tempus fermentum. Aliquam auctor vitae enim in convallis. Nunc id ligula sed quam lacinia rutrum. Nam vitae pellentesque neque. Sed auctor ultrices consectetur.";
+    paraContent.innerHTML = `Welcome to Bloom & Thyme – where fresh flavors and artistic presentations meet to create an unforgettable dining experience. <br> Our menu is inspired by the beauty of nature, featuring vibrant, handcrafted dishes and drinks made with seasonal ingredients, aromatic herbs, and edible blooms. <br>
+    Whether you’re savoring a garden-fresh hummus bowl, indulging in a hearty Mediterranean-inspired salad, or raising a toast with one of our signature floral mocktails, every bite and sip is designed to delight your senses. Perfect for intimate gatherings, celebrations, or simply treating yourself, Bloom & Thyme is more than a meal – it’s a moment to bloom.`;
     divHeadline.appendChild(paraContent);
 
     divContent.append(imgHome);
@@ -24,6 +24,6 @@ export function homeContent () {
     const finalMsg = document.createElement("h2");
     finalMsg.textContent = "Come to see us and have a free beer!";
     divContent.appendChild(finalMsg);
-    finalMsg.style.cssText = "color: var(--main-border-color); text-align: center; font-family: 'Exo 2', serif;"
+    finalMsg.style.cssText = "color: var(--main-boder-color); text-align: center; font-family: 'Exo 2', serif;"
 
 }
