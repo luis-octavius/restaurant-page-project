@@ -24,5 +24,6 @@ export function homeContent () {
     const finalMsg = document.createElement("h2");
     finalMsg.textContent = "Come to see us and have a free beer!";
     divContent.appendChild(finalMsg);
-    finalMsg.style.cssText = "color: white; text-align: center; font-family: 'Exo 2', serif;"
+    finalMsg.style.cssText = "color: var(--main-border-color); text-align: center; font-family: 'Exo 2', serif;"
+
 }
