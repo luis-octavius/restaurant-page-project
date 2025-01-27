@@ -13,10 +13,6 @@ export function homeContent() {
   divHeadline.classList.add("divHeadline");
   divContent.appendChild(divHeadline);
 
-  const h1Content = document.createElement("h1");
-  h1Content.classList.add("font-train");
-  h1Content.textContent = "Bloom and Thyme";
-  divHeadline.appendChild(h1Content);
   const paraContent = document.createElement("p");
   paraContent.innerHTML = `Welcome to Bloom & Thyme – where fresh flavors and artistic presentations meet to create an unforgettable dining experience. <br> Our menu is inspired by the beauty of nature, featuring vibrant, handcrafted dishes and drinks made with seasonal ingredients, aromatic herbs, and edible blooms. <br>
     Whether you’re savoring a garden-fresh hummus bowl, indulging in a hearty Mediterranean-inspired salad, or raising a toast with one of our signature floral mocktails, every bite and sip is designed to delight your senses. Perfect for intimate gatherings, celebrations, or simply treating yourself, Bloom & Thyme is more than a meal – it’s a moment to bloom.`;
