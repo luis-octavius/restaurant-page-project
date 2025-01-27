@@ -11,22 +11,6 @@ imgMenu1.src = img1;
 imgMenu2.src = img2;
 imgMenu3.src = img3;
 
-// class Tentative, does not work yet
-// class divPlate {
-//     constructor(father, img, h2, text) {
-//         this.father = father;
-//         this.img = img;
-//         this.h2 = h2;
-//         this.text = text;
-//     }
-//     set divAcc (father) {
-//         const divP = document.createElement("div");
-//         divP.innerHTML = `<img src=${this.img}><h2>${this.h2}</h2> <p>${this.text}<p>`;
-//         divContent.appendChild(divP);
-//         return divP;
-//     }
-// }
-
 function createDiv(img, h1, text) {
   const divPlate = document.createElement("div");
   divContent.appendChild(divPlate);
@@ -64,20 +48,4 @@ export function menuContent() {
     "Chickpea Harvest Salad Bowl",
     "A hearty Mediterranean bowl with crispy chickpeas, fresh greens, olives, figs, cucumber, and tomatoes, served with a creamy yogurt drizzle and rustic flatbread."
   );
-
-  // divContent.appendChild(imgMenu1);
-  // divContent.appendChild(imgMenu2);
-  // divContent.appendChild(imgMenu3);
-
-  // const imgPack = divContent.getElementsByTagName("img");
-
-  // // try to create a function that makes the divPlates
-  // // function createDivPlate (img, title, text) {
-  // //     let arr = [...arguments];
-  // //     console.log(arguments);
-
-  // //     for(let i = 0; i < arr.length; i++) {
-  // //         console.log(arr[i]);
-  // //     }
-  // // }
 }
