@@ -4,7 +4,7 @@ import { menuContent } from "./menu.js";
 import { aboutContent } from "./about.js";
 import html from "./template.html";
 
-aboutContent();
+homeContent();
 
 const body = document.querySelector("body");
 const btnHome = document.querySelector("#btn-home");
