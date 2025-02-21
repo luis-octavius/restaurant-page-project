@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imperial+Script&family=Monoton&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --main-bg-color: rgb(151, 190, 90);
-    --main-content-color: rgb(255, 0, 0);
-    --main-font-color: rgb(255, 232, 197);
-    --main-border-color: rgb(255, 162, 127);
+    --main-bg-color: rgb(216, 64, 64);
+    --main-content-color: rgb(163, 29, 29);
+    --main-font-color: rgb(248, 242, 222);
+    --main-border-color: rgb(236, 220, 191);
     --main-font: "Exo 2", serif;
 }
 
@@ -23,8 +23,8 @@ header {
 
 header nav {
     display: flex;
-    justify-content: flex-start;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 70px;
     align-items: flex-start;
     height: 80px; 
 }
@@ -93,6 +93,7 @@ footer {
     padding: 20px;
     margin-top: 100px;
     width: 70%;
+    border: 10px dashed var(--main-border-color);
 }
 
 .divHeadline h1 {
@@ -200,9 +201,6 @@ footer {
     .divPlateText h1 {
         font-size: 2.5rem;
         text-align: center;
-    }
-    div#content {
-        gap: 0;
     }
     
     header nav { 
